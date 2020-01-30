@@ -24,7 +24,7 @@ namespace Conditional_Statement
 
                 //if else-if statement that determines the students letter grade based on 
                 //the interger grade they entered
-                if (grade > 97)
+                if (grade > 97 && grade <= 100)
                 {
                     Console.WriteLine("A+");
                 }
@@ -72,11 +72,14 @@ namespace Conditional_Statement
                 {
                     Console.WriteLine("D-");
                 }
-                else
+                else if (grade < 60 && grade >= 0)
                 {
                     Console.WriteLine("F");
                 }
-
+                else
+                {
+                    Console.WriteLine("Please try again and enter a valid grade number between 1 and 100");
+                }
 
             }//end of try
             catch
