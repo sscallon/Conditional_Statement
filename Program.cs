@@ -11,7 +11,7 @@ namespace Conditional_Statement
         static void Main(string[] args)
         {
             //ask the user for input
-            Console.WriteLine("Please enter expected grade number");
+            Console.WriteLine("Please enter expected grade number...");
 
             //use try-catch to validate the user input
             //If the user enters wrong input the catch will handle and show error message
@@ -76,13 +76,13 @@ namespace Conditional_Statement
                 {
                     Console.WriteLine("F");
                 }
-                else
+                else //else statement that shows error message if interger entered is above 100 or below 1
                 {
                     Console.WriteLine("Please try again and enter a valid grade number between 1 and 100");
                 }
 
             }//end of try
-            catch
+            catch //catch statement to display error message if user input anything besides an interger
             {
                 Console.WriteLine("Please enter an interger value");
                 Console.WriteLine("Press any key to exit the program...");
